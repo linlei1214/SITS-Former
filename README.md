@@ -29,14 +29,14 @@ Sentinel-2 images provide a rich source of information for a variety of land cov
 + sklearn = 1.0.1
 
 ## Datasets
-* The complete **unlabeled dataset** for model pre-training can be downloaded [here](https://zenodo.org/record/5815523#.YeZjOv5BxPY). If you use this dataset in your research, please cite our paper.
+* The complete **unlabeled dataset** for model pre-training can be downloaded [here](https://zenodo.org/record/5803021#.YdFIB2hBzcv). If you use this dataset in your research, please cite our paper.
 * A large open-access benchmark **S2-2017-T31TFM** intrdouced by V. Sainte Fare Garnot is used for method evaluation, which can be downloaded [here](https://zenodo.org/record/5815523). Please run the provided code `PrepareData.ipynb` to process the data into acceptable formats. Note that the copyright of this dataset belongs to its producer. If you use this dataset in your research, please cite its DOI and the related paper: **Garnot V S F, Landrieu L, Giordano S, et al. Satellite image time series classification with pixel-set encoders and temporal self-attention[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020: 12325-12334.**
 
 ## Pre-Training SITS-Former
 
 The file `pretraining.py` is the main code for pre-training a SITS-Former model. All the unlabeled time series used in the pre-training stage are stored in the folder `Unlabeled-Data-PixelPatch`. The scrpit can automatically split the data into training and validation sets according to the given *valid_rate*.
 
-You can run the following Linux command to pretrain SITS-Former from scratch using our recommended hyperparameters.
+You can run the following Linux command to pretrain SITS-Former from scratch using our recommend hyperparameters.
 ```
 python pretraining.py \   
     --dataset_path '../Unlabeled-Data-PixelPatch' \

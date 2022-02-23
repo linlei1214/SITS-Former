@@ -22,7 +22,7 @@ Sentinel-2 images provide a rich source of information for a variety of land cov
 ## Requirements
 + tqdm = 4.62.2
 + numpy = 1.19.2
-+ python = 3.6.10
++ python >= 3.8
 + pytorch = 1.7.1
 + tensorboard = 2.4.0
 + pandas = 1.0.3
